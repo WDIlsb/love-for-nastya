@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Event Wish</title>
+    <!-- Подключаем шрифт и иконки -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Звук -->
+    <audio id="wishSound" src="assets/wish.mp3"></audio>
+
+    <div id="app">
+      <!-- ЭКРАН 1: Баннер молитвы -->
+      <div class="screen banner-screen" id="bannerScreen">
+        <div class="header">
+          <div class="event-tag">❤️ Шанс повышен!</div>
+          <h1>Valentine's Secret</h1>
+        </div>
+
+        <div class="character-container">
+          <img
+            src="assets/kitty_start.png"
+            alt="Hello Kitty"
+            class="kitty-start"
+          />
+        </div>
+
+        <div class="controls">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <button class="wish-btn" onclick="startWish()">
+            <span class="icon">✨</span>
+            <span class="text">Крутить</span>
+            <span class="price">x1 ❤️</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ЭКРАН 2: Анимация (Метеорит) -->
+      <div class="screen animation-screen" id="animScreen">
+        <div class="meteor"></div>
+        <div class="flash"></div>
+      </div>
+
+      <!-- ЭКРАН 3: Результат (Лега) -->
+      <div class="screen result-screen" id="resultScreen">
+        <div class="rays"></div>
+        <!-- Лучи света -->
+
+        <div class="card">
+          <div class="rarity">⭐⭐⭐⭐⭐</div>
+          <img src="assets/kitty_win.png" alt="Love Kitty" class="kitty-win" />
+
+          <div class="info-box">
+            <h2>Дорогая Настёна</h2>
+            <p class="type">Element: качественная любовь 💖</p>
+
+<div class="message">
+    <p>Сначала я думал подарить тебе бриллианты и 101 розу, но понял, что это слишком банально... Поэтому дарю эту валентинку! ✨</p>
+    <p>Мы знакомы только месяц, но за это время ты стала <strong>очень дорога моему сердцу!</strong></p>
+    <p>Ты невероятная девушка. Я уже давно влюблён в твою манеру речи, в твой голос (даже когда он <strong>дедовский!</strong>), твой смех и харизму!</p>
+    <p>Безумно счастлив, что мы встретились, и рад узнавать тебя с каждым днём всё больше.</p>
+    <p><strong>Будьте навсегда моей!</strong> Варианта отказаться у вас нет. </p>
+    <p style="text-align: right; margin-top: 5px;"><em>С любовью, лучший мужчина вмире ❤️</em></p>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
